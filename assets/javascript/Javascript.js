@@ -22,12 +22,21 @@ function startbutton(){
   function answer2(){
     time=15;
     incorrect++;
+    // incorrecta1();
+    // setTimeout(question2(),3000)
     question2();
+  
     // $("#game").html("<p>"+"Incorrect,The correct answer is Sauron"+"</p>")
     // setTimeout(question2,5000);
     
     
   };
+  // function incorrecta1(){
+  // $("#game").html("<p>"+"That is in correct the correct answer is "+'Sauron'+"</p>")
+  
+
+  // };
+
   // write our question to the html
   function question1(){
      $("#game").html("<p>"+"Who created the one ring?"+"</p>"
@@ -36,6 +45,7 @@ function startbutton(){
      +"<br>"+"<button id ='b''onclick='answer2()'>Celebrimbor"+"</button>"
      +"<br>"+"<button id ='b''onclick='answer2()'>Galadriel"+"</button>"
      ) ;
+     
    
    //  if option A clicked 
    // correct++;
