@@ -1,4 +1,4 @@
-var time =3;
+var time =15;
 var correct =0;
 var incorrect =0;
 
@@ -12,13 +12,25 @@ function startbutton(){
       x.style.display = "none";
     }
   }
-
+// this function is given to the correct answer
+  function answer1(){
+    time=15;
+    correct++;
+    question2();
+  };
+  // given to the incorrect answer
+  function answer2(){
+    time=15;
+    incorrect++;
+    question2();
+  };
+  // write our question to the html
   function question1(){
      $("#game").html("<p>"+"Who created the one ring?"+"</p>"
-     +"<br>" +"<button id ='a'>Sauron"+ "</button>"
-     +"<br>"+"<button id ='b'>Mithrandir"+"</button>"
-     +"<br>"+"<button id ='c'>Celebrimbor"+"</button>"
-     +"<br>"+"<button id ='d'>Galadriel"+"</button>"
+    +"<button id ='b'onclick='answer1()'>Sauron"+ "</button>"
+     +"<br>"+"<button id ='b''onclick='answer2()'>Mithrandir"+"</button>"
+     +"<br>"+"<button id ='b''onclick='answer2()'>Celebrimbor"+"</button>"
+     +"<br>"+"<button id ='b''onclick='answer2()'>Galadriel"+"</button>"
      ) ;
    
    //  if option A clicked 
@@ -33,12 +45,22 @@ function startbutton(){
    // question2();
    // timer()
 };
+function answer3(){
+  time=15;
+  correct++;
+  question3();
+};
+function answer4(){
+  time=15;
+  incorrect++;
+  question3();
+};
  function question2(){ 
-   $("#game").html("<p>"+"what is the race of small human like beings who inhabit the Shire?"+"</p>"
-   +"<br>"+"<button id ='a'>Elves"+ "</button>"
-   +"<br>"+"<button id ='b'>Dwarves"+"</button>"
-   +"<br>"+"<button id ='c'>Hobbits"+"</button>"
-   +"<br>"+"<button id ='d'>Goblins"+"</button>"
+   $("#game").html("<p>"+"What is the race of small human like beings who inhabit the Shire?"+"</p>"
+   +"<br>"+"<button id ='b'onclick='answer4()'>Elves"+ "</button>"
+   +"<br>"+"<button id ='b'onclick='answer4()'>Dwarves"+"</button>"
+   +"<br>"+"<button id ='b'onclick='answer3()'>Hobbits"+"</button>"
+   +"<br>"+"<button id ='b'onclick='answer4()'>Goblins"+"</button>"
  
  
   ) ;
@@ -50,13 +72,22 @@ function startbutton(){
    // question3();
    // timer();}
  };
-
+ function answer5(){
+  time=15;
+  correct++;
+  question4();
+};
+function answer6(){
+  time=15;
+  incorrect++;
+  question4();
+};
  function question3(){
-  $("#game").html("<p>"+"In the Fellowship of the ring the group comes across A balroc a devilish beast of epic proportion, from where does it originate?"+"</p>"+
-  "<br>" +"<button id ='a'>Moria"+ "</button>"
-  +"<br>"+"<button id ='b'>Morgoth"+"</button>"
-  +"<br>"+"<button id ='c'>Morrigan"+"</button>"
-  +"<br>"+"<button id ='d'>Mordor"+"</button>"
+  $("#game").html("<p>"+"In the Mines of Moria, the group Encounters a Balrog a devilish beast of epic proportion, from where does it originate?"+"</p>"+
+  "<br>" +"<button id ='b'onclick='answer6()'>Moria"+ "</button>"
+  +"<br>"+"<button id ='b'onclick='answer5()'>Morgoth"+"</button>"
+  +"<br>"+"<button id ='b'onclick='answer6()'>Morrigan"+"</button>"
+  +"<br>"+"<button id ='b'onclick='answer6()'>Mordor"+"</button>"
 
   ) ;  //  if option B clicked 
   // correct++;
@@ -67,12 +98,22 @@ function startbutton(){
   // timer();}
 
  };
+ function answer7(){
+  time=15;
+  correct++;
+  question5();
+};
+function answer8(){
+  time=15;
+  incorrect++;
+  question5();
+};
  function question4(){
   $("#game").html("<p>"+"What is the name of the elf who leads the reinforcements to Helms Deep in the Two Towers?"+"</p>"+
-  "<br>" +"<button id ='a'>Elladan"+ "</button>"
-  +"<br>"+"<button id ='b'>Elrohir"+"</button>"
-  +"<br>"+"<button id ='c'>Legolas"+"</button>"
-  +"<br>"+"<button id ='d'>Haldir"+"</button>"
+  "<br>" +"<button id ='b'onclick='answer8()'>Elladan"+ "</button>"
+  +"<br>"+"<button id ='b'onclick='answer8()'>Elrohir"+"</button>"
+  +"<br>"+"<button id ='b'onclick='answer8()'>Legolas"+"</button>"
+  +"<br>"+"<button id ='b'onclick='answer7()'>Haldir"+"</button>"
   ) ;  //  if option D  clicked 
   // correct++;
   // timer()
@@ -82,12 +123,22 @@ function startbutton(){
   // timer();}
 
  };
+ function answer9(){
+time=99;
+  correct++;
+  scorescreen();
+};
+function answer10(){
+  incorrect++;
+  scorescreen();
+  time=99
+};
  function question5(){  
-  $("#game").html("<p>"+"what is the name of the giant elephants encountered by Sam and frodo in The Two Towers? (this name is only given to them in the book)"+"</p>"+
-  "<br>" +"<button id ='a'>Oliphants"+ "</button>"
-  +"<br>"+"<button id ='b'>Haradrim"+"</button>"
-  +"<br>"+"<button id ='c'>Mumakil"+"</button>"
-  +"<br>"+"<button id ='d'>Elephantidae"+"</button>"
+  $("#game").html("<p>"+"What is the name of the giant elephants encountered by Sam and frodo in The Two Towers? (this name is only given to them in the book)"+"</p>"+
+  "<br>" +"<button id ='b'onclick='answer9()'>Oliphants"+ "</button>"
+  +"<br>"+"<button id ='b'onclick='answer10()'>Haradrim"+"</button>"
+  +"<br>"+"<button id ='b'onclick='answer9()'>Mumakil"+"</button>"
+  +"<br>"+"<button id ='b'onclick='answer10()'>Elephantidae"+"</button>"
   ) ;//  if option C clicked 
   // correct++;
   // timer()
@@ -137,15 +188,15 @@ function startbutton(){
         $('#content').append("<h1>"+"incorrect: "+incorrect+"</h1>");}
 
   function usertimeout(){
-          $("#content").html("<h1>"+"you ran out of time(reload by clicking on the Trivia Game above)"+"</h1>"+'<br>')
+          $("#game").html("<h1>"+"you ran out of time(reload by clicking on the Trivia Game above)"+"</h1>"+'<br>')
          //  setTimeout(,10000);
-          $('#content').append("<h1>"+"correct:"+correct)+"</h1>";
-          $('#content').append("<h1>"+"incorrect: "+incorrect+"</h1>");}
+          $('#scorecard').append("<h1>"+"correct:"+correct)+"</h1>";
+          $('#scorecard').append("<h1>"+"incorrect: "+incorrect+"</h1>");}
 
  function scorescreen(){
-  $("#content").html("<h1>"+"Did you enjoy your journy to Middle earth?"+"</h1>"+'<br>')
+  $("#game").html("<h1>"+"Hope you enjoyed your journy to Middle earth"+"</h1>"+'<br>')
  //  setTimeout(,10000);
-  $('#content').append("<h1>"+"correct:"+correct)+"</h1>";
-  $('#content').append("<h1>"+"incorrect: "+incorrect+"</h1>");
+  $('#game').append("<h1>"+"correct: "+correct)+"</h1>";
+  $('#game').append("<h1>"+"incorrect: "+incorrect+"</h1>");
 
 }

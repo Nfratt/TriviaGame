@@ -26,7 +26,7 @@
   #banner {
     font-size: 200%;
     font-family: 'Kaushan Script', cursive;
-    color: goldenrod;
+    color: gold;
     background: gray;
     margin-left: 40%;
     margin-right: 40%;
@@ -37,29 +37,40 @@
 #startbtn{  width: 10%;
   padding: 10px 0;
   text-align: center;
-  background-color: teal;
+  background-color: #666666;
   align-content: center;
-  color: white;
+  color: gold;
   font-family: 'Kaushan Script', cursive;
 }
 #rules {
   width: 100%;
   padding: 50px 0;
   text-align: center;
-  background-color: whitesmoke;
+  background-color:#666666;;
+  color: gold;
   margin-top: 20px;
   align-content: center;
   font-family: 'Kaushan Script', cursive;
+  font-size: 125%
   
 }
+#scorecard{text-align: center;}
 #game{
   font-family: 'Kaushan Script', cursive;
+  font-size: 125%;
+
+}
+#b{
+  font-family: 'Kaushan Script', cursive;
+color: gold;
+background:#666666; ;
+font-size: 125%;
 }
 #timer{
-  color:whitesmoke;
   font-size: 150%;
   font-family: Arial, Helvetica, sans-serif;
-  background:teal;
+  background:#666666;;
+  color: gold;
   margin-left:48% ;
   margin-right:48%;
 
@@ -72,10 +83,10 @@
     font-size: 25px;
     font-weight: 700;
     line-height: 90px;
-    color: #ffffff;
+    color: gold;
     text-align: center;
     text-decoration: none;
-    background: #4aaaa5;
+    background:#666666;
   
   }
  #start{text-align: center;
@@ -106,7 +117,7 @@ footer {
     color: #cccccc;
     text-align: center;
     background: #666666;
-    border-top: 8px solid #4aaaa5;
+    border-top: 8px solid gold;
     height: 50px;
   }
 
