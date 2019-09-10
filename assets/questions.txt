@@ -13,7 +13,7 @@ A:Moria
 B:Morgoth
 C:Morrigan
 D:Mordor
-q4:What is the name of the elf who leads the reinforcements to helms deep in the Two Towers?
+q4:What is the name of the elf who leads the reinforcements to Helms Deep in the Two Towers?
 A:Elladan
 B:Elrohir
 C:Legolas
