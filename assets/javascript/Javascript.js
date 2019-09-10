@@ -202,7 +202,7 @@ function answer10(){
         $('#content').append("<h1>"+"incorrect: "+incorrect+"</h1>");}
 
   function usertimeout(){
-          $("#game").html("<h1>"+"you ran out of time(reload by clicking on the Trivia Game above)"+"</h1>"+'<br>')
+          $("#game").html("<h1>"+"you ran out of time"+"</h1>"+'<br>')
          //  setTimeout(,10000);
           $('#scorecard').append("<h1>"+"correct:"+correct)+"</h1>";
           $('#scorecard').append("<h1>"+"incorrect: "+incorrect+"</h1>");}
