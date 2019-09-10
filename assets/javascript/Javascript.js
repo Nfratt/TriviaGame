@@ -38,6 +38,7 @@ function startbutton(){
   // };
 
   // write our question to the html
+
   function question1(){
      $("#game").html("<p>"+"Who created the one ring?"+"</p>"
     +"<button id ='b'onclick='answer1()'>Sauron"+ "</button>"
