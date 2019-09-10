@@ -5,6 +5,8 @@
     <title>TriviaGame</title>
 
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -19,16 +21,22 @@
         </div>
     </header>
     <div id= "content">
-        <h1 id="start">Press "START" to begin</h1>
+        <div id="banner">Lord of the rings Trivia</div>
+        <h2 id="start">Press "START" to begin</h2>
         <button id="startbtn" onclick="startbutton()">
             START
         </button>
+        <p id="timer"></p>
+        <span id="correct"></span>
+        <span id="incorrect"></span>
 
         <div id="rules"> 
             <p>Rules:</p>
-            <p>You will have 30 seconds to answer each trivia question.
+            <p>You will have approximatly 15 seconds to answer each trivia question.
             upon completeing the game your score will be shown to you.</p>
         </div>
+       <span id="game"></span>
+    
     </div>
 
     <footer>

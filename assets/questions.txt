@@ -1,0 +1,25 @@
+q1:Who created the one ring?
+a:Sauron
+b:Mithrandir 
+C:Celebrimbor
+D:Galadriel
+q2:what is the race of small human like beings who inhabit the Shire?
+A:elves
+B:Dwarves
+C:Hobbits
+D:Goblins
+q3:In the Fellowship of the ring the group comes across A balroc a deavilish beast of epic preportion, from where does it orriginate?
+A:Moria
+B:Morgoth
+C:Morrigan
+D:Mordor
+q4:What is the name of the elf who leads the reinforcements to helms deep in the Two Towers?
+A:Elladan
+B:Elrohir
+C:Legolas
+D:Haldir
+q5:what is the name of the giant elephants encounted by Same and frodo in The Two Towers? (this name is only given to them in the book)
+A:Oliphants
+B:Haradrim
+C:Mumakil
+D:Elephantidae
