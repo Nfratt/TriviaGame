@@ -23,6 +23,10 @@ function startbutton(){
     time=15;
     incorrect++;
     question2();
+    // $("#game").html("<p>"+"Incorrect,The correct answer is Sauron"+"</p>")
+    // setTimeout(question2,5000);
+    
+    
   };
   // write our question to the html
   function question1(){
