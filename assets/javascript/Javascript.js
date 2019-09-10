@@ -168,7 +168,7 @@ function answer10(){
 	}
 
  function usertimeout1(){
-   $("#content").html("<h1>"+"you ran out of time(reload by clicking on the Trivia Game above)"+"</h1>"+'<br>')
+   $("#conten").html("<h1>"+"you ran out of time(reload by clicking on the Trivia Game above)"+"</h1>"+'<br>')
   //  setTimeout(,10000);
    $('#content').append("<h1>"+"correct:"+correct)+"</h1>";
    $('#content').append("<h1>"+"incorrect: "+incorrect+"</h1>");}
@@ -198,7 +198,7 @@ function answer10(){
           $('#scorecard').append("<h1>"+"incorrect: "+incorrect+"</h1>");}
 
  function scorescreen(){
-  $("#game").html("<h1>"+"Hope you enjoyed your journy to Middle earth"+"</h1>"+'<br>')
+  $("#game").html("<h1>"+"Hope you enjoyed your journy to Middle earth!"+"</h1>"+'<br>')
  //  setTimeout(,10000);
   $('#game').append("<h1>"+"correct: "+correct)+"</h1>";
   $('#game').append("<h1>"+"incorrect: "+incorrect+"</h1>");
