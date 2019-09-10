@@ -12,37 +12,53 @@ function startbutton(){
       x.style.display = "none";
     }
   }
- 
-   function question1(){
-     $("#game").html("<p>"+"Who created the one ring?"+"</p>"+"<br>"+"<button id ='a'>Sauron"+
-     "</button>"+"<br>"+"<button id ='b'>Mithrandir"+
-     "</button>"+"<br>"+"<button id ='c'>Celebrimbor"+
-     "</button>"+"<br>"+"<button id ='d'>Galadriel"+"</button>"
+
+  function question1(){
+     $("#game").html("<p>"+"Who created the one ring?"+"</p>"
+     +"<br>" +"<button id ='a'>Sauron"+ "</button>"
+     +"<br>"+"<button id ='b'>Mithrandir"+"</button>"
+     +"<br>"+"<button id ='c'>Celebrimbor"+"</button>"
+     +"<br>"+"<button id ='d'>Galadriel"+"</button>"
      ) ;
    
-  //  if option A clicked 
-  // correct++;
-  // timer();
-  // question2();
-  // if else
-  // incorrect--;
-  // question2();
-  // else 
-  // incorrect--
-  // question2();
-  // timer()
+   //  if option A clicked 
+   // correct++;
+   // timer();
+   // question2();
+   // if else
+   // incorrect--;
+   // question2();
+   // else 
+   // incorrect--
+   // question2();
+   // timer()
 };
- function question2(){
-  //  if option C clicked 
-  // correct++;
+ function question2(){ 
+   $("#game").html("<p>"+"what is the race of small human like beings who inhabit the Shire?"+"</p>"
+   +"<br>"+"<button id ='a'>Elves"+ "</button>"
+   +"<br>"+"<button id ='b'>Dwarves"+"</button>"
+   +"<br>"+"<button id ='c'>Hobbits"+"</button>"
+   +"<br>"+"<button id ='d'>Goblins"+"</button>"
+ 
+ 
+  ) ;
+   //  if option C clicked 
+   // correct++;
   // timer()
-  // if (time < 1){
-  // incorrect--;
-  // question3();
-  // timer();}
+   // if (time < 1){
+   // incorrect--;
+   // question3();
+   // timer();}
  };
 
- function question3(){  //  if option B clicked 
+ function question3(){
+  $("#game").html("<p>"+"In the Fellowship of the ring the group comes across A balroc a devilish beast of epic proportion, from where does it originate?"+"</p>"+
+  "<br>" +"<button id ='a'>Moria"+ "</button>"
+  +"<br>"+"<button id ='b'>Morgoth"+"</button>"
+  +"<br>"+"<button id ='c'>Morrigan"+"</button>"
+  +"<br>"+"<button id ='d'>Mordor"+"</button>"
+
+  ) ;  //  if option B clicked 
   // correct++;
   // timer()
   // if (time < 1){
@@ -51,7 +67,13 @@ function startbutton(){
   // timer();}
 
  };
- function question4(){  //  if option D  clicked 
+ function question4(){
+  $("#game").html("<p>"+"What is the name of the elf who leads the reinforcements to Helms Deep in the Two Towers?"+"</p>"+
+  "<br>" +"<button id ='a'>Elladan"+ "</button>"
+  +"<br>"+"<button id ='b'>Elrohir"+"</button>"
+  +"<br>"+"<button id ='c'>Legolas"+"</button>"
+  +"<br>"+"<button id ='d'>Haldir"+"</button>"
+  ) ;  //  if option D  clicked 
   // correct++;
   // timer()
   // if (time < 1){
@@ -60,7 +82,13 @@ function startbutton(){
   // timer();}
 
  };
- function question5(){  //  if option C clicked 
+ function question5(){  
+  $("#game").html("<p>"+"what is the name of the giant elephants encountered by Sam and frodo in The Two Towers? (this name is only given to them in the book)"+"</p>"+
+  "<br>" +"<button id ='a'>Oliphants"+ "</button>"
+  +"<br>"+"<button id ='b'>Haradrim"+"</button>"
+  +"<br>"+"<button id ='c'>Mumakil"+"</button>"
+  +"<br>"+"<button id ='d'>Elephantidae"+"</button>"
+  ) ;//  if option C clicked 
   // correct++;
   // timer()
   // if (time < 1){
@@ -108,7 +136,7 @@ function startbutton(){
         $('#content').append("<h1>"+"correct:"+correct)+"</h1>";
         $('#content').append("<h1>"+"incorrect: "+incorrect+"</h1>");}
 
-    function usertimeout(){
+  function usertimeout(){
           $("#content").html("<h1>"+"you ran out of time(reload by clicking on the Trivia Game above)"+"</h1>"+'<br>')
          //  setTimeout(,10000);
           $('#content').append("<h1>"+"correct:"+correct)+"</h1>";
