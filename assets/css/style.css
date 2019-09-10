@@ -9,7 +9,8 @@
   text-align: center;;
 }
   #content{
-  text-align: center
+  text-align: center;
+  margin: 5px;
 }
   #masthead {
     margin-left: 20%;
@@ -23,7 +24,22 @@
     border-bottom: 2px solid #cccccc;
   }
 
-
+#startbtn{  width: 10%;
+  padding: 10px 0;
+  text-align: center;
+  background-color: teal;
+  align-content: center;
+  color: white;
+}
+#rules {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: whitesmoke;
+  margin-top: 20px;
+  align-content: center;
+  
+}
   #logo {
     float: left;
     width: 250px;
@@ -63,7 +79,6 @@ footer {
     padding: 30px 0;
     clear: both;
     font-size: 12px;
-    color: #ffffff;
     color: #cccccc;
     text-align: center;
     background: #666666;
