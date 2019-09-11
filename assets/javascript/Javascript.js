@@ -2,6 +2,7 @@ var time = 2;
 var correct = 0;
 var incorrect = 0;
 var isGameStarted = false;
+var usertimeoutnum=1
 document.ready
 function startbutton() {
   if (isGameStarted) {
@@ -20,15 +21,17 @@ function startbutton() {
 }
 // this function is given to the correct answer
 function answer1() {
-  time = 20;
+  
   correct++;
-  correct1();
+  correct1()
+  usertimeoutnum++;
 };
 // given to the incorrect answer  dont use time as a global variable reinnitalize the timer 
 function answer2() {
-  time = 20;
+  
   incorrect++;
-  incorrecta1();
+  incorrecta1()
+  usertimeoutnum++;
 }
 
 function correct1() {
@@ -77,6 +80,8 @@ function incorrecta2() {
 // write our question to the html
 
 function question1() {
+  time=20
+
   $("#game").html("<p>Who created the one ring?</p>");
 
   var button1 = $("<button id ='b'>");
@@ -121,17 +126,20 @@ function question1() {
   // timer()
 }
 function answer3() {
-  time = 20;
+  
   correct++;
   correct2();
+  usertimeoutnum++;
 };
 function answer4() {
-  time = 20;
+  
   incorrect++;
   incorrecta2();
+  usertimeoutnum++;
 };
 function question2() {
-  
+  time=20
+
     $("#game").html("<p>What is the race of small human like beings who inhabit The Shire?</p>");
   
     var button1 = $("<button id ='b'>");
@@ -173,16 +181,20 @@ function question2() {
   // timer();}
 };
 function answer5() {
-  time = 20;
+  
   correct++;
   correct3();
+  usertimeoutnum++;
 };
 function answer6() {
-  time = 20;
+  
   incorrect++;
   incorrecta3();
+  usertimeoutnum++;
 };
 function question3() {
+  time=20
+
   $("#game").html("<p>In the Mines of Moria, the group Encounters a Balrog a devilish beast of epic proportion, from where does it originate?</p>");
   
   var button1 = $("<button id ='b'>");
@@ -220,16 +232,20 @@ function question3() {
 
 };
 function answer7() {
-  time = 15;
+  
   correct++;
   correct4();
+  usertimeoutnum++
 };
 function answer8() {
-  time = 15;
+  
   incorrect++;
   incorrecta4();
+  usertimeoutnum++
 };
 function question4() {
+  time=20
+
   $("#game").html("<p>What is the name of the elf who leads the reinforcements to Helms Deep in the Two Towers?</p>");
   
   var button1 = $("<button id ='b'>");
@@ -269,13 +285,16 @@ function answer9() {
   time = 99;
   correct++;
   correct5();
+  
 };
 function answer10() {
   incorrect++;
   incorrecta5();
   time = 99;
+  
 };
 function question5() {
+ 
   $("#game").html("<p>What is the name of the giant elephants encountered by Sam and frodo in The Two Towers? (this name is only given to them in the book)</p>");
   
   var button1 = $("<button id ='b'>");
@@ -318,8 +337,19 @@ function timer() {
   clock = setInterval(countDown, 1000);
   function countDown() {
     if (time < 1) {
-      clearInterval(clock);
-      usertimeout();
+      // clearInterval(clock);
+      if (usertimeoutnum ==1){
+        usertimeout1();
+      };
+      if (usertimeoutnum ==2){
+        usertimeout2();
+      };if (usertimeoutnum ==3){
+        usertimeout3();
+      };if (usertimeoutnum ==4){
+        usertimeout4();
+      };if (usertimeoutnum ==5){
+        usertimeout5();
+      };
     }
     if (time > 0) {
       time--;
@@ -330,11 +360,34 @@ function timer() {
 
 
 
-function usertimeout() {
-  $("#game").html("<p>" + "you ran out of time! Restart" + "</p>" + '<br>')
-  setTimeout(question1,3000)
-  $('#scorecard').append("<h1>" + "correct:" + correct) + "</h1>";
-  $('#scorecard').append("<h1>" + "incorrect: " + incorrect + "</h1>");
+function usertimeout1() {
+  $("#game").html(incorrecta1)
+  setTimeout(question2,3000);
+ incorrect++;
+}
+function usertimeout2() {
+  $("#game").html(incorrecta2)
+  setTimeout(question3,3000);
+  incorrect++;
+
+
+}
+function usertimeout3() {
+  $("#game").html(incorrecta3)
+  setTimeout(question4,3000);
+  incorrect++;
+ 
+}
+function usertimeout4() {
+  $("#game").html(incorrecta4)
+  setTimeout(question5,3000);
+  incorrect++;
+
+}
+function usertimeout5() {
+  $("#game").html(incorrecta5)
+  setTimeout(scorescreen,3000);
+  incorrect++;
 }
 
 function scorescreen() {
