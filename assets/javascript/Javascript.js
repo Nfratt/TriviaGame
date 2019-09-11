@@ -388,6 +388,7 @@ function usertimeout5() {
   $("#game").html(incorrecta5)
   setTimeout(scorescreen,3000);
   incorrect++;
+  return
 }
 
 function scorescreen() {
