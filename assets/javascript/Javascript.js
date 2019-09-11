@@ -1,4 +1,4 @@
-var time = 2;
+var time = 20;
 var correct = 0;
 var incorrect = 0;
 var isGameStarted = false;
@@ -294,7 +294,8 @@ function answer10() {
   
 };
 function question5() {
- 
+ time =20
+
   $("#game").html("<p>What is the name of the giant elephants encountered by Sam and frodo in The Two Towers? (this name is only given to them in the book)</p>");
   
   var button1 = $("<button id ='b'>");
@@ -388,14 +389,14 @@ function usertimeout5() {
   $("#game").html(incorrecta5)
   setTimeout(scorescreen,3000);
   incorrect++;
-  return
+  
 }
 
 function scorescreen() {
   $("#game").html("<p id='end'>" + "Hope you enjoyed your journey to Middle earth! Did you get them all? hit Trivia Game to play again!" + "</p>" + '<br>')
   //  setTimeout(,10000);
-  $('#game').append("<p id 'end'>" + "correct: " + correct) + "</p>";
-  $('#game').append("<p id 'end'>" + "incorrect: " + incorrect + "</p>");
+  $('#game').append("<h1>" + "correct: " + correct + "</h1>"+"<br>");
+  $('#game').append("<h1>" + "incorrect: " + incorrect + "</h1>");
 
 }
 // later add images for more fun
