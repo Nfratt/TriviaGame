@@ -35,27 +35,27 @@ function answer2() {
 }
 
 function correct1() {
-  $('#game').html("<p>" + "Sauron!that is correct!" + "</p>")
+  $('#game').html("<p>" + "Sauron! That is correct!" + "</p>")
   setTimeout(question2, 4000);
 }
 
 function correct2() {
-  $('#game').html("<p>" + "Hobbits!that is correct!" + "</p>")
+  $('#game').html("<p>" + "Hobbits! That is correct!" + "</p>")
   setTimeout(question3, 4000);
 }
 
 function correct3() {
-  $('#game').html("<p>" + "Morgoth!that is correct!" + "</p>")
+  $('#game').html("<p>" + "Morgoth! That is correct!" + "</p>")
   setTimeout(question4, 4000);
 }
 
 function correct4() {
-  $('#game').html("<p>" + "Haldir!that is correct!" + "</p>")
+  $('#game').html("<p>" + "Haldir!That is correct!" + "</p>")
   setTimeout(question5, 4000);
 }
 // go back and set divs for the questions to make this one function
 function correct5() {
-  $('#game').html("<p>" + "Mumakil!that is correct!" + "</p>")
+  $('#game').html("<p>" + "Mumakil! That is correct!" + "</p>")
   setTimeout(scorescreen, 4000);
 }
 function incorrecta1() {
@@ -391,10 +391,10 @@ function usertimeout5() {
 }
 
 function scorescreen() {
-  $("#game").html("<p id='end'>" + "Hope you enjoyed your journy to Middle earth! Did you get them all? hit Trivia Game to play again!" + "</p>" + '<br>')
+  $("#game").html("<p id='end'>" + "Hope you enjoyed your journey to Middle earth! Did you get them all? hit Trivia Game to play again!" + "</p>" + '<br>')
   //  setTimeout(,10000);
-  $('#game').append("<h1>" + "correct: " + correct) + "</h1>";
-  $('#game').append("<h1>" + "incorrect: " + incorrect + "</h1>");
+  $('#game').append("<p id 'end'" + "correct: " + correct) + "</p>";
+  $('#game').append("<p id 'end'>" + "incorrect: " + incorrect + "</p>");
 
 }
 // later add images for more fun
