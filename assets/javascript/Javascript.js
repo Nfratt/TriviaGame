@@ -393,7 +393,7 @@ function usertimeout5() {
 function scorescreen() {
   $("#game").html("<p id='end'>" + "Hope you enjoyed your journey to Middle earth! Did you get them all? hit Trivia Game to play again!" + "</p>" + '<br>')
   //  setTimeout(,10000);
-  $('#game').append("<p id 'end'" + "correct: " + correct) + "</p>";
+  $('#game').append("<p id 'end'>" + "correct: " + correct) + "</p>";
   $('#game').append("<p id 'end'>" + "incorrect: " + incorrect + "</p>");
 
 }
