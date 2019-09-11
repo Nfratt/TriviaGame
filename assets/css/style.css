@@ -93,6 +93,17 @@ font-size: 125%;
   font-family: 'Kaushan Script', cursive;
 }
 
+ #Music{ size:75%;
+  font-family:  'Kaushan Script', cursive;
+}
+  #end{
+    font-family:  'Kaushan Script', cursive;
+    text-align: center;
+    font-size: 125%;
+    color: gold;
+    background: #666666
+    
+  }
  
   nav {
     float: right;
